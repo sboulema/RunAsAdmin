@@ -4,7 +4,7 @@
     <Identity Id="dda2a29d-8fd9-4131-adc5-afcf6ef36b25" Version="1.1" Language="en-US" Publisher="Samir L. Boulema" />
     <DisplayName>RunAsAdmin</DisplayName>
     <Description>Run Visual Studio as administrator</Description>
-    <MoreInfo>http://visualstudiogallery.msdn.microsoft.com/3f911864-03e1-4b91-9578-4925d5966193</MoreInfo>
+    <MoreInfo>https://visualstudiogallery.msdn.microsoft.com/ae17f242-8d62-4e2a-8116-00bcb4e7875b</MoreInfo>
     <Icon>Resources\run.ico</Icon>
     <PreviewImage>Resources\run.jpg</PreviewImage>
     <Tags>Run As, Admin, Administrator, Root</Tags>
