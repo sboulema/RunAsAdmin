@@ -1,3 +1,5 @@
 RunAsAdmin.sln.ide/
 RunAsAdmin/bin/
 RunAsAdmin/obj/
+/RunAsAdmin/*.user
+/.vs

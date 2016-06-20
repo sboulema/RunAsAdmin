@@ -2,7 +2,7 @@
 // MUST match guids.h
 using System;
 
-namespace FundaRealEstateBV.RunAsAdmin
+namespace SamirBoulema.RunAsAdmin
 {
     static class GuidList
     {
