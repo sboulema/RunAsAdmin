@@ -29,8 +29,8 @@ namespace SamirBoulema.RunAsAdmin
 
             var regEntry = Registry.GetValue(RegistryFolder, _devenvFilename, null);
 
-            if ((options.Enabled == false && regEntry == null) ||
-                (options.Enabled && (regEntry == null || !regEntry.Equals("RUNASADMIN"))))
+            if (options.Enabled == false && regEntry == null ||
+                options.Enabled && (regEntry == null || !regEntry.Equals("RUNASADMIN")))
             {
                 options.Enabled = true;
                 options.SaveSettingsToStorage();

@@ -1,0 +1,15 @@
+version: 1.2.{build}
+configuration:
+- Release
+- Debug
+install:
+- ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
+before_build:
+- ps: >-
+    Vsix-IncrementVsixVersion | Vsix-UpdateBuildVersion
+
+    nuget restore -Verbosity quiet
+build:
+  verbosity: minimal
+after_build:
+- ps: Vsix-PushArtifacts

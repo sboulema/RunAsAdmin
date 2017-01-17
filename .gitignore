@@ -3,3 +3,6 @@ RunAsAdmin/bin/
 RunAsAdmin/obj/
 /RunAsAdmin/*.user
 /.vs
+/packages
+/Backup
+/UpgradeLog.htm
