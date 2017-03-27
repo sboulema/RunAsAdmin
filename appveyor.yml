@@ -1,7 +1,7 @@
-version: 1.2.{build}
-configuration:
+version: 1.3.{build}
+skip_tags: true
+configuration: 
 - Release
-- Debug
 install:
 - ps: (new-object Net.WebClient).DownloadString("https://raw.github.com/madskristensen/ExtensionScripts/master/AppVeyor/vsix.ps1") | iex
 before_build:
@@ -12,4 +12,7 @@ before_build:
 build:
   verbosity: minimal
 after_build:
-- ps: Vsix-PushArtifacts
+- ps: >-
+    Get-ChildItem ./*.vsix -Recurse | Rename-Item -NewName {$_.basename + '_' + $env:APPVEYOR_BUILD_VERSION + $_.extension }
+
+    Vsix-PushArtifacts | Vsix-PublishToGallery

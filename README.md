@@ -1,6 +1,17 @@
 # RunAsAdmin
 Visual Studio extension to run Visual Studio as administrator
 
+[![Beerpay](https://beerpay.io/sboulema/RunAsAdmin/badge.svg?style=flat)](https://beerpay.io/sboulema/RunAsAdmin)
+
+## Installing
+[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=SamirBoulema.RunAsAdmin) ![Visual Studio Marketplace](http://vsmarketplacebadge.apphb.com/version-short/SamirBoulema.RunAsAdmin.svg)
+
+[Github Releases](https://github.com/sboulema/RunAsAdmin/releases)
+
+Open VSIX Gallery
+
+[AppVeyor](https://ci.appveyor.com/project/sboulema/runasadmin) [![Build status](https://ci.appveyor.com/api/projects/status/swx1byhk0tuxsbog?svg=true)](https://ci.appveyor.com/project/sboulema/runasadmin)
+
 ## Run Visual Studio as administrator
 1. Install the [RunAsAdmin](https://marketplace.visualstudio.com/items?itemName=SamirBoulema.RunAsAdmin) extension
 2. Restart Visual Studio
@@ -21,3 +32,7 @@ When disabling the extension from within the Visual Studio extensions dialog not
 The extension adds a registry entry at the following location: `HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers\`
 
 Where the "Name" will be the path to Visual Studio and the value will be "RUNASADMIN" or "RUNASNORMAL"
+
+---
+
+![VS2017 Partner](http://i.imgur.com/wlgwRF1.png)
