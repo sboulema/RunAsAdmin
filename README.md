@@ -8,7 +8,7 @@ Visual Studio extension to run Visual Studio as administrator
 
 [Github Releases](https://github.com/sboulema/RunAsAdmin/releases)
 
-Open VSIX Gallery
+[Open VSIX Gallery](http://vsixgallery.com/extension/dda2a29d-8fd9-4131-adc5-afcf6ef36b25/)
 
 [AppVeyor](https://ci.appveyor.com/project/sboulema/runasadmin) [![Build status](https://ci.appveyor.com/api/projects/status/swx1byhk0tuxsbog?svg=true)](https://ci.appveyor.com/project/sboulema/runasadmin)
 
