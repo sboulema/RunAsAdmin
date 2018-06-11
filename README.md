@@ -1,7 +1,7 @@
 # RunAsAdmin
 Visual Studio extension to run Visual Studio as administrator
 
-[![Beerpay](https://beerpay.io/sboulema/RunAsAdmin/badge.svg?style=flat)](https://beerpay.io/sboulema/RunAsAdmin)
+[![Beerpay](https://img.shields.io/beerpay/sboulema/RunAsAdmin.svg?style=flat)](https://beerpay.io/sboulema/RunAsAdmin)
 
 ## Installing
 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=SamirBoulema.RunAsAdmin) ![Visual Studio Marketplace](http://vsmarketplacebadge.apphb.com/version-short/SamirBoulema.RunAsAdmin.svg)
