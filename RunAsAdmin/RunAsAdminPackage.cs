@@ -8,23 +8,26 @@ using Microsoft.Win32;
 
 namespace SamirBoulema.RunAsAdmin
 {
-    [PackageRegistration(UseManagedResourcesOnly = true)]
+    [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [InstalledProductRegistration("#110", "#112", "1.0", IconResourceID = 400)]
-    [ProvideAutoLoad(UIContextGuids80.NoSolution)]
+    [ProvideAutoLoad(UIContextGuids80.NoSolution, PackageAutoLoadFlags.BackgroundLoad)]
     [Guid(GuidList.guidRunAsAdminPkgString)]
     [ProvideOptionPage(typeof(OptionPageGrid), "RunAsAdmin", "General", 0, 0, true)]
-    public sealed class RunAsAdminPackage : Package
+    public sealed class RunAsAdminPackage : AsyncPackage
     {
         private DTE _dte;
         private string _devenvFilename;
         private const string RegistryFolder = @"HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers\";
 
-        protected override void Initialize()
+        protected override async System.Threading.Tasks.Task InitializeAsync(System.Threading.CancellationToken cancellationToken, 
+            IProgress<ServiceProgressData> progress)
         {
-            base.Initialize();
+            _dte = await GetServiceAsync(typeof(DTE)) as DTE;
+
+            await base.InitializeAsync(cancellationToken, progress);
+
             var options = (OptionPageGrid)GetDialogPage(typeof(OptionPageGrid));
             options.SetPackage(this);
-            _dte = (DTE)GetService(typeof(DTE));
             _devenvFilename = _dte.Application.FileName;
 
             var regEntry = Registry.GetValue(RegistryFolder, _devenvFilename, null);

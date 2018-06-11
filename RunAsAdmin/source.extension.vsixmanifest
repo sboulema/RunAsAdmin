@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
-  <Metadata>
-    <Identity Id="dda2a29d-8fd9-4131-adc5-afcf6ef36b25" Version="1.3" Language="en-US" Publisher="Samir L. Boulema" />
-    <DisplayName>RunAsAdmin</DisplayName>
-    <Description>Run Visual Studio as administrator</Description>
-    <MoreInfo>https://github.com/sboulema/RunAsAdmin</MoreInfo>
-    <License>Resources\License.txt</License>
-    <GettingStartedGuide>https://github.com/sboulema/RunAsAdmin/blob/master/README.md</GettingStartedGuide>
-    <ReleaseNotes>https://github.com/sboulema/RunAsAdmin/releases</ReleaseNotes>
-    <Icon>Resources\run.ico</Icon>
-    <PreviewImage>Resources\run.jpg</PreviewImage>
-    <Tags>Run As, Admin, Administrator, Root</Tags>
-  </Metadata>
-  <Installation InstalledByMsi="false">
-    <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,15.0]" />
-  </Installation>
-  <Dependencies>
-    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
-    <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
-  </Dependencies>
-  <Assets>
-    <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
-  </Assets>
-  <Prerequisites>
-    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.26004.1,16.0)" DisplayName="Visual Studio core editor" />
-  </Prerequisites>
+    <Metadata>
+        <Identity Id="dda2a29d-8fd9-4131-adc5-afcf6ef36b25" Version="1.4" Language="en-US" Publisher="Samir L. Boulema" />
+        <DisplayName>RunAsAdmin</DisplayName>
+        <Description xml:space="preserve">Run Visual Studio as administrator</Description>
+        <MoreInfo>https://github.com/sboulema/RunAsAdmin</MoreInfo>
+        <License>Resources\License.txt</License>
+        <GettingStartedGuide>https://github.com/sboulema/RunAsAdmin/blob/master/README.md</GettingStartedGuide>
+        <ReleaseNotes>https://github.com/sboulema/RunAsAdmin/releases</ReleaseNotes>
+        <Icon>Resources\RunAsAdmin.png</Icon>
+        <PreviewImage>Resources\RunAsAdmin.png</PreviewImage>
+        <Tags>Run As, Admin, Administrator, Root</Tags>
+    </Metadata>
+    <Installation InstalledByMsi="false">
+        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,15.0]" />
+    </Installation>
+    <Dependencies>
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+        <Dependency Id="Microsoft.VisualStudio.MPF.14.0" DisplayName="Visual Studio MPF 14.0" d:Source="Installed" Version="[14.0]" />
+    </Dependencies>
+    <Assets>
+        <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
+    </Assets>
+    <Prerequisites>
+        <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0.26004.1,16.0)" DisplayName="Visual Studio core editor" />
+    </Prerequisites>
 </PackageManifest>
