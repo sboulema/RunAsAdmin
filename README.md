@@ -14,8 +14,9 @@ Visual Studio extension to run Visual Studio as administrator
 
 ## Run Visual Studio as administrator
 1. Install the [RunAsAdmin](https://marketplace.visualstudio.com/items?itemName=SamirBoulema.RunAsAdmin) extension
-2. Restart Visual Studio
-3. Visual Studio will be run as administrator
+2. Go to Tools -> Options -> RunAsAdmin
+3. Set Enabled to true
+4. Restart Visual Studio
 
 ## Run Visual Studio as normal user
 1. Go to Tools -> Options -> RunAsAdmin
