@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="dda2a29d-8fd9-4131-adc5-afcf6ef36b25" Version="1.5" Language="en-US" Publisher="Samir L. Boulema" />
+        <Identity Id="dda2a29d-8fd9-4131-adc5-afcf6ef36b25" Version="2.0" Language="en-US" Publisher="Samir L. Boulema" />
         <DisplayName>RunAsAdmin</DisplayName>
         <Description xml:space="preserve">Run Visual Studio as administrator</Description>
         <MoreInfo>https://github.com/sboulema/RunAsAdmin</MoreInfo>
@@ -13,7 +13,10 @@
         <Tags>Run As, Admin, Administrator, Root</Tags>
     </Metadata>
     <Installation InstalledByMsi="false">
-        <InstallationTarget Id="Microsoft.VisualStudio.Pro" Version="[14.0,17.0)" />
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0,17.0)" />
+        <InstallationTarget Version="[17.0,18.0)" Id="Microsoft.VisualStudio.Community">
+            <ProductArchitecture>amd64</ProductArchitecture>
+        </InstallationTarget>
     </Installation>
     <Dependencies>
         <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
