@@ -76,7 +76,7 @@ jobs:
       - name: Publish to Marketplace
         uses: cezarypiatek/VsixPublisherAction@0.1
         with:
-          extension-file: RunAsAdmin/RunAsAdmin/release/RunAsAdmin.vsix
+          extension-file: RunAsAdmin/RunAsAdmin/bin/release/RunAsAdmin.vsix
           publish-manifest-file: RunAsAdmin/publish-manifest.json
           personal-access-code: ${{ secrets.VS_PUBLISHER_ACCESS_TOKEN }}
 
