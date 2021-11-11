@@ -33,10 +33,11 @@ When disabling the extension from within the Visual Studio extensions dialog not
 You have to use the RunAsAdmin options setting to enable or disable.
 
 ### Under the hood
-The extension adds a registry entry at the following location: `HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers\`
+The extension adds two registry entries at the following location: `HKEY_CURRENT_USER\Software\Microsoft\Windows NT\CurrentVersion\AppCompatFlags\Layers\`
 
-Where the "Name" will be the path to Visual Studio and the value will be "RUNASADMIN" or "RUNASNORMAL"
+One for the path to Visual Studio and one for the path to the Visual Studio Launcher. The value of the registry entries will be "RUNASADMIN" or "RUNASNORMAL"
 
 ## Thanks
 Cazzulino - [How to get Visual Studio 2017 installation path](https://www.cazzulino.com/how-to-get-vsinstallroot.html)
+
 Rick van den Bosch - [Running Visual Studio as an administrator causes ‘Save changes to devenv.sln’ when double clicking solutions](https://www.rickvandenbosch.net/blog/running-visual-studio-as-an-administrator-causes-save-changes-to-devenv-sln-when-double-clicking-solutions/)
