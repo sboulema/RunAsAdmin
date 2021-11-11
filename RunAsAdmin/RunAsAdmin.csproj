@@ -126,9 +126,6 @@
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Analyzer Include="..\packages\Community.VisualStudio.Toolkit.Analyzers.1.0.76.309\analyzers\dotnet\cs\Community.VisualStudio.Toolkit.Analyzers.dll" />
-  </ItemGroup>
   <PropertyGroup>
     <UseCodebase>true</UseCodebase>
   </PropertyGroup>
