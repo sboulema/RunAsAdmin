@@ -27,7 +27,7 @@ jobs:
         uses: cezarypiatek/VsixVersionAction@1.0
         with:
           version: ${{ env.version }}
-          vsix-manifest-file: 'TGit\source.extension.vsixmanifest'
+          vsix-manifest-file: 'RunAsAdmin\source.extension.vsixmanifest'
 
       - name: Setup MSBuild
         uses: microsoft/setup-msbuild@v1.0.2
